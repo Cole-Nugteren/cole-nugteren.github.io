@@ -3,7 +3,10 @@ var sidebar = false;
 const searchParams = new URLSearchParams(window.location.search);
 console.log(searchParams.has('bar'))
 if (searchParams.has('bar')){
-    openSidebar()
+    if (searchParams.get('bar')=='true') {
+        openSidebar()
+        console.log("open sidebar")
+    }
 }
 
 
