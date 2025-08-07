@@ -8,7 +8,7 @@ class Thumbnail {
         var work = document.createElement("div");
         work.id = "work-thumbnail";
         var image = document.createElement("img");
-        image.src = "assets/works thumbnails/" + image;
+        image.src = "assets/works-thumbnails/" + image;
         image.width = "315";
         //image.height = "250";
         image.style = "position:relative;";
