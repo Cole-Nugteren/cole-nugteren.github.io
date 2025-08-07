@@ -8,14 +8,14 @@ class Thumbnail {
         var work = document.createElement("div");
         work.id = "work-thumbnail";
         var image = document.createElement("img");
-        image.src = "assets/works-thumbnails/" + image;
+        image.src = "assets/works-thumbnails/" + this.image;
         image.width = "315";
         //image.height = "250";
         image.style = "position:relative;";
         work.appendChild(image);
         var subtitle = document.createElement("a");
         subtitle.id = "darklink";
-        subtitle.innerHTML = title;
+        subtitle.innerHTML = this.title;
         work.appendChild(subtitle);
         center.appendChild(work);
     }
