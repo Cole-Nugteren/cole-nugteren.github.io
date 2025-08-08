@@ -29,7 +29,9 @@ const game_works = [
     new Thumbnail("turtle-herdle", "turtle herdle", "turtle-herdle.png"),
     new Thumbnail("suntide-lodge", "suntide lodge", "suntide-lodge.png"),
     new Thumbnail("checkmight", "checkmight", "checkmight.png"),
-    new Thumbnail("starlight-postal","starlight postal","starlight-postal.png")
+    new Thumbnail("starlight-postal", "starlight postal", "starlight-postal.png"),
+    new Thumbnail("crescent-court", "anomalies in crescent court", "crescent-court.png"),
+    new Thumbnail("pitch","pitch","pitch.png")
 ];
 
 for (const thumb of game_works) {
