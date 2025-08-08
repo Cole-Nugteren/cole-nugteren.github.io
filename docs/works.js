@@ -9,7 +9,7 @@ class Thumbnail {
         work.id = "work-thumbnail";
         var image = document.createElement("img");
         image.src = "assets/works-thumbnails/" + this.image;
-        image.width = "350";
+        image.width = "325";
         //image.height = "250";
         image.style = "position:relative;";
         work.appendChild(image);
