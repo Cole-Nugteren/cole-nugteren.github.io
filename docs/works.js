@@ -13,7 +13,6 @@ class Thumbnail {
         var image = document.createElement("img");
         image.src = "assets/works-thumbnails/" + this.image;
         image.width = "325";
-        //image.height = "250";
         image.style = "position:relative;";
         work.appendChild(image);
         var subtitle = document.createElement("a");
@@ -73,19 +72,4 @@ switch (tab) {
     default:
         tab = "games";
         generateGames();
-}
-
-function openGames() {
-    window.location.href = "works.html?tab=games&bar="+sidebar;
-}
-function openMusic() {
-    window.location.href = "works.html?tab=music&bar=" + sidebar;
-}
-
-function openArt() {
-    window.location.href = "works.html?tab=art&bar=" + sidebar;
-}
-
-function openMisc() {
-    window.location.href = "works.html?tab=misc&bar=" + sidebar;
 }
