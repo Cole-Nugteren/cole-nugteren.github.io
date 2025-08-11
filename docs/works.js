@@ -56,7 +56,7 @@ function generateMusic() {
     }
 }
 
-var tab = "games";
+var tab = "";
 const params2 = new URLSearchParams(window.location.search);
 if (params2.has('tab')) {
     tab = params2.get('tab')
@@ -69,7 +69,4 @@ switch (tab) {
     case "music":
         generateMusic();
         break;
-    default:
-        tab = "games";
-        generateGames();
 }
