@@ -19,6 +19,10 @@ a {
     #darklink:hover {
         color: #4d6662;
     }
+#bold {
+    text-decoration: none;
+    color: #4d6662;
+}
 
 #main-canvas {
     position:fixed;

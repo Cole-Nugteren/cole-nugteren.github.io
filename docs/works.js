@@ -56,17 +56,26 @@ function generateMusic() {
     }
 }
 
-var tab = "";
+var tab = "games";
 const params2 = new URLSearchParams(window.location.search);
 if (params2.has('tab')) {
     tab = params2.get('tab')
 }
 
+
 switch (tab) {
     case "games":
         generateGames();
+        document.getElementsByName("game_button")[0].setAttribute("id", "bold");
         break;
     case "music":
         generateMusic();
+        document.getElementsByName("music_button")[0].setAttribute("id", "bold");
+        break;
+    case "art":
+        document.getElementsByName("art_button")[0].setAttribute("id", "bold");
+        break;
+    case "misc":
+        document.getElementsByName("misc_button")[0].setAttribute("id", "bold");
         break;
 }
