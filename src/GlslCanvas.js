@@ -24,7 +24,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import xhr from 'xhr';
 import { createProgram, createShader, parseUniforms, setupWebGL } from './gl/gl';
 import Texture from './gl/Texture';
-import { isCanvasVisible, isDiff, getFile } from './tools/common';
+import { isCanvasVisible, isDiff } from './tools/common';
 import { subscribeMixin } from './tools/mixin';
 
 export default class GlslCanvas {
@@ -34,29 +34,17 @@ export default class GlslCanvas {
         contextOptions = contextOptions || {};
         options = options || {};
 
-        if (canvas.hasAttribute('data-fullscreen') &&
-            (canvas.getAttribute('data-fullscreen') == "1" ||
-                canvas.getAttribute('data-fullscreen') == "true")
-        ) {
-            this.width = window.innerWidth;
-            this.height = window.innerHeight;
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        } else {
-            this.width = canvas.clientWidth;
-            this.height = canvas.clientHeight;
-        }
+        this.width = canvas.clientWidth;
+        this.height = canvas.clientHeight;
 
         this.canvas = canvas;
         this.gl = undefined;
-        this.deps = {};
         this.program = undefined;
         this.textures = {};
         this.buffers = {};
         this.uniforms = {};
         this.vbo = {};
         this.isValid = false;
-        this.animationFrameRequest = undefined;
 
         this.BUFFER_COUNT = 0;
         // this.TEXTURE_COUNT = 0;
@@ -173,9 +161,9 @@ void main(){
             if (sandbox.resize()) {
                 sandbox.forceRender = true;
             }
-
+            
             sandbox.render();
-            sandbox.animationFrameRequest = window.requestAnimationFrame(RenderLoop);
+            window.requestAnimationFrame(RenderLoop);
         }
 
         // Start
@@ -185,13 +173,10 @@ void main(){
     }
 
     destroy() {
-        // Stop the animation
-        cancelAnimationFrame(this.animationFrameRequest);
-
         this.animated = false;
         this.isValid = false;
         for (let tex in this.textures) {
-            if (tex.destroy) {
+            if (tex.destroy){
                 tex.destroy();
             }
         }
@@ -205,12 +190,11 @@ void main(){
             const buffer = this.buffers[key];
             this.gl.deleteProgram(buffer.program);
         }
-
         this.program = null;
         this.gl = null;
     }
 
-    load(fragString, vertString) {
+    load (fragString, vertString) {
 
         // Load vertex shader if there is one
         if (vertString) {
@@ -221,27 +205,6 @@ void main(){
         if (fragString) {
             this.fragmentString = fragString;
         }
-
-        let lines = this.fragmentString.split(/\r?\n/);
-        this.fragmentString = "#define PLATFORM_WEBGL\n#line 0\n";
-
-        lines.forEach((line, i) => {
-            let line_trim = line.trim();
-            if (line_trim.startsWith('#include \"lygia')) {
-                let dep = line_trim.substring(15).replace(/\'|\"|\;|\s/g, '');
-                if (dep.endsWith('glsl')) {
-                    if (this.deps[dep] === undefined) {
-                        var url = "https://lygia.xyz" + dep;
-                        this.deps[dep] = getFile(url);
-                    }
-                    this.fragmentString += this.deps[dep] + '\n#line ' + (i + 1) + '\n';
-                }
-            }
-            else
-                this.fragmentString += line + '\n';
-        });
-
-        // console.log(this.fragmentString);
 
         this.animated = false;
         this.nDelta = (this.fragmentString.match(/u_delta/g) || []).length;
@@ -259,7 +222,7 @@ void main(){
                     let ext = match[2].split('.').pop().toLowerCase();
                     if (match[1] && match[2] &&
                         (ext === 'jpg' || ext === 'jpeg' || ext === 'png' ||
-                            ext === 'ogv' || ext === 'webm' || ext === 'mp4')) {
+                         ext === 'ogv' || ext === 'webm' || ext === 'mp4')) {
                         this.setUniform(match[1], match[2]);
                     }
                 }
@@ -302,7 +265,7 @@ void main(){
         }
         this.buffers = buffers;
         this.texureIndex = this.BUFFER_COUNT;
-
+        
         // Trigger event
         this.trigger('load', {});
 
@@ -310,7 +273,7 @@ void main(){
         this.render();
     }
 
-    test(callback, fragString, vertString) {
+    test (callback, fragString, vertString) {
         // Thanks to @thespite for the help here
         // https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/
         let pre_test_vert = this.vertexString;
@@ -352,7 +315,7 @@ void main(){
                     wasValid: wasValid,
                     frag: fragString || sandbox.fragmentString,
                     vert: vertString || sandbox.vertexString,
-                    timeElapsedMs: ext.getQueryObjectEXT(query, ext.QUERY_RESULT_EXT) / 1000000.0
+                    timeElapsedMs: ext.getQueryObjectEXT(query, ext.QUERY_RESULT_EXT)/1000000.0
                 };
                 finishTest();
                 callback(ret);
@@ -363,7 +326,7 @@ void main(){
         waitForTest();
     }
 
-    loadTexture(name, urlElementOrData, options) {
+    loadTexture (name, urlElementOrData, options) {
         if (!options) {
             options = {};
         }
@@ -430,7 +393,7 @@ void main(){
             mouse.x && mouse.x >= rect.left && mouse.x <= rect.right &&
             mouse.y && mouse.y >= rect.top && mouse.y <= rect.bottom) {
 
-            let mouse_x = (mouse.x - rect.left) * this.realToCSSPixels;
+            let mouse_x = (mouse.x - rect.left ) * this.realToCSSPixels;
             let mouse_y = (this.canvas.height - (mouse.y - rect.top) * this.realToCSSPixels);
 
             this.uniform('2f', 'vec2', 'u_mouse', mouse_x, mouse_y);
@@ -438,8 +401,8 @@ void main(){
     }
 
     // ex: program.uniform('3f', 'position', x, y, z);
-    uniform(method, type, name, ...value) { // 'value' is a method-appropriate arguments list
-        this.uniforms[name] = this.uniforms[name] || {};
+    uniform (method, type, name, ...value) { // 'value' is a method-appropriate arguments list
+        this.uniforms[name] = this.uniforms[name] || {}; 
         let uniform = this.uniforms[name];
         let change = isDiff(uniform.value, value);
 
@@ -511,29 +474,29 @@ void main(){
         }
     }
 
-    render() {
+    render () {
         this.visible = isCanvasVisible(this.canvas);
-        if (this.forceRender || this.change ||
-            (this.animated && this.visible && !this.paused)) {
+        if ( this.forceRender || this.change ||
+            (this.animated && this.visible && ! this.paused) ) {
 
             // Update Uniforms when are need
             let date = new Date();
             let now = performance.now();
-            this.timeDelta = (now - this.timePrev) / 1000.0;
+            this.timeDelta =  (now - this.timePrev) / 1000.0;
             this.timePrev = now;
             if (this.nDelta > 1) {
                 // set the delta time uniform
                 this.uniform('1f', 'float', 'u_delta', this.timeDelta);
             }
 
-            if (this.nTime > 1) {
+            if (this.nTime > 1 ) {
                 // set the elapsed time uniform
                 this.uniform('1f', 'float', 'u_time', (now - this.timeLoad) / 1000.0);
             }
 
             if (this.nDate) {
                 // Set date uniform: year/month/day/time_in_sec
-                this.uniform('4f', 'float', 'u_date', date.getFullYear(), date.getMonth(), date.getDate(), date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds() + date.getMilliseconds() * 0.001);
+                this.uniform('4f', 'float', 'u_date', date.getFullYear(), date.getMonth(), date.getDate(), date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds() + date.getMilliseconds() * 0.001 );
             }
 
             // set the resolution uniform
@@ -559,11 +522,11 @@ void main(){
         }
     }
 
-    pause() {
+    pause () {
         this.paused = true;
     }
 
-    play() {
+    play () {
         this.paused = false;
     }
 
@@ -630,7 +593,7 @@ void main(){
         return {
             input: input,
             output: output,
-            swap: function () {
+            swap: function() {
                 var temp = input;
                 input = output;
                 output = temp;
@@ -675,7 +638,7 @@ void main(){
             buffer: buffer,
             W: W,
             H: H,
-            resize: function (W, H) {
+            resize: function(W, H) {
                 gl.bindFramebuffer(gl.FRAMEBUFFER, buffer);
                 var minW = Math.min(W, this.W);
                 var minH = Math.min(H, this.H);
