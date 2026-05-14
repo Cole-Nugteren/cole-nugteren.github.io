@@ -25,6 +25,7 @@ class Thumbnail {
 }
 
 const game_works = [
+    new Thumbnail("petrichor-gardens", "petrichor gardens", "petrichor-gardens.png"),
     new Thumbnail("tubular", "tubular", "tubular.png"),
     new Thumbnail("ripple-and-frawg", "ripple and frawg: the seasonal song", "ripple-and-frawg.png"),
     new Thumbnail("turtle-herdle", "turtle herdle", "turtle-herdle.png"),
