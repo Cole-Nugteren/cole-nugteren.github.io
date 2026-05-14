@@ -32,7 +32,6 @@ const game_works = [
     new Thumbnail("suntide-lodge", "suntide lodge", "suntide-lodge.png"),
     new Thumbnail("checkmight", "checkmight", "checkmight.png"),
     new Thumbnail("starlight-postal", "starlight postal", "starlight-postal.png"),
-    new Thumbnail("crescent-court", "anomalies in crescent court", "crescent-court.png"),
     new Thumbnail("pitch","pitch","pitch.png")
 ];
 
