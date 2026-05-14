@@ -11,7 +11,7 @@ class Thumbnail {
         work.id = "work-thumbnail";
         work.height = height;
         var image = document.createElement("img");
-        image.src = "assets/works-thumbnails/" + this.image;
+        image.src = "../assets/works-thumbnails/" + this.image;
         image.width = "325";
         image.style = "position:relative;";
         work.appendChild(image);
@@ -26,7 +26,7 @@ class Thumbnail {
 
 const game_works = [
     new Thumbnail("petrichor-gardens", "petrichor gardens", "petrichor-gardens.png"),
-    new Thumbnail("tubular", "tubular", "tubular.png"),
+    new Thumbnail("tubular", "tubular!!", "tubular.png"),
     new Thumbnail("ripple-and-frawg", "ripple and frawg: the seasonal song", "ripple-and-frawg.png"),
     new Thumbnail("turtle-herdle", "turtle herdle", "turtle-herdle.png"),
     new Thumbnail("suntide-lodge", "suntide lodge", "suntide-lodge.png"),
