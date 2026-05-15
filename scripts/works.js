@@ -44,6 +44,15 @@ const music_works = [
     new Thumbnail("sugar","sugar","sugar.jpg")
 ];
 
+const art_works = [
+    new Thumbnail("parasite","parasite","parasite.jpg"),
+    new Thumbnail("trail-vignettes","trail vignettes","trail-vignettes.jpg"),
+    new Thumbnail("isometric-worlds","isometric worlds","isometric-worlds.jpg"),
+    new Thumbnail("stalker","stalker","stalker.jpg"),
+    new Thumbnail("silvergreen-mall","silvergreen mall","silvergreen-mall.jpg"),
+    new Thumbnail("life-drawings","life drawings","life-drawings.jpg")
+];
+
 function generateGames() {
     for (const thumb of game_works) {
         thumb.generate(300);
@@ -53,6 +62,12 @@ function generateGames() {
 function generateMusic() {
     for (const thumb of music_works) {
         thumb.generate(350);
+    }
+}
+
+function generateArt() {
+    for (const thumb of art_works) {
+        thumb.generate(250);
     }
 }
 
@@ -73,6 +88,7 @@ switch (tab) {
         document.getElementsByName("music_button")[0].setAttribute("id", "bold");
         break;
     case "art":
+        generateArt();
         document.getElementsByName("art_button")[0].setAttribute("id", "bold");
         break;
     case "misc":
