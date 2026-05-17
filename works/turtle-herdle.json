@@ -1,0 +1,19 @@
+{
+    "id":"turtle-herdle",
+    "title":"turtle herdle",
+    "thumbimg":"turtle-herdle.png",
+    "link":"https://canslp.itch.io/turtle-herdle",
+    "images":[
+        {"path":"title.png","subtitle":"title screen"},
+        {"path":"sprites.jpg","subtitle":"game sprites"},
+        {"path":"screenshot-1.jpg","subtitle":""},
+        {"path":"screenshot-2.jpg","subtitle":""},
+        {"path":"screenshot-3.jpg","subtitle":""},
+        {"path":"screenshot-4.jpg","subtitle":""}
+    ],
+    "paragraphs":[
+        {"text":"you are the moon. it's time to herd some turtles."},
+        {"text":"this is a game i made in what feels like two weekends, but was probably three. it is based on a game pitch that i made with some friends at an igda 'pitch jam'- basically practicing quick ideation and a quick sell. i don't think anyone at this event had any plans to materialize their pitch, but one day i got bored and made turtle herdle without telling any of my original pitchmates. they thought it was pretty cool."},
+        {"text":"i have a real soft spot for this game, it's so simple and small but it's also very polished and feels really coherent. i made it all in p5.js which i will never do again because something devastating happens to the audio if you play it for too long- but otherwise it runs like a dream. i think this is a fun and clever puzzle game and the implementation is really elegant."}
+    ]
+}

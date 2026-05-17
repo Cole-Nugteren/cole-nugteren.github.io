@@ -1,0 +1,28 @@
+{
+    "id":"suntide-lodge",
+    "title":"suntide lodge",
+    "thumbimg":"suntide-lodge.png",
+    "link":"https://canslp.itch.io/suntide-lodge",
+    "images":[
+        {"path":"title.jpg","subtitle":"title screen"},
+        {"path":"005.jpg","subtitle":"island river"},
+        {"path":"010.jpg","subtitle":"cave river"},
+        {"path":"004.jpg","subtitle":"cove bed"},
+        {"path":"013.jpg","subtitle":"island spring"},
+        {"path":"012.jpg","subtitle":"remote oasis"},
+        {"path":"006.jpg","subtitle":"naval battle"},
+        {"path":"009.jpg","subtitle":"fine dining"},
+        {"path":"008.jpg","subtitle":"locker rooms"},
+        {"path":"002.jpg","subtitle":"beach and shallows"},
+        {"path":"001.jpg","subtitle":"marsh lands"},
+        {"path":"011.jpg","subtitle":"volcano slide"},
+        {"path":"007.jpg","subtitle":"war crime"},
+        {"path":"003.jpg","subtitle":"pool rules"},
+        {"path":"014.jpg","subtitle":"wide view"}
+    ],
+    "paragraphs":[
+        {"text":"suntide lodge is a game about exploring a waterpark after dark. set in the dead of midwestern winter, it is a 'tropical island' themed family resort of ambiguous caribean and polynesian influence."},
+        {"text":"waterparks to me are a storm of aesthetic contradictions. the lush, warm, almost stuffy interior is permeated at all times by a bitter snowy exterior. a gentle winter night just beyond the bright and bustling complex. they are monuments to commercial artifice- a cheap plastic armature propping up a facade of paradise, an ultimate middle class luxury. a tacky cultural appropriation, an obscene roadside attraction. i just love them so much."},
+        {"text":"i find immense comfort in an indoor pool, especially one of this scale. big waterparks have this haunting quality to them- they are enormous echoing chambers, too large even to fully illuminate. i remember in childhood the feeling of walking through them late at night, from the room to the restaurant or vice versa. i often fantasized about sneaking into the swimming area after it closed, basking in the big empty pool. too many games are made about the horror of liminal spaces, this is my liminal space comfort game."}
+    ]
+}

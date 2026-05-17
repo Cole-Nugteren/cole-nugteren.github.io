@@ -1,0 +1,19 @@
+{
+    "id":"tubular",
+    "title":"tubular!!",
+    "thumbimg":"tubular.png",
+    "link":"https://totally-entertainment.itch.io/tubular",
+    "images":[
+        {"path":"splash-screen.png","subtitle":"splash screen"},
+        {"path":"car.png","subtitle":"mouse car"},
+        {"path":"skateboard.png","subtitle":"rabbit skateboard"},
+        {"path":"ball.png","subtitle":"hamster ball"},
+        {"path":"scooter.png","subtitle":"ferret scooter"},
+        {"path":"freestyle.png","subtitle":"freestyle park"}
+    ],
+    "paragraphs":[
+        {"text":"tubular is the radical rodent racing game where pet shop critters traverse an abandoned shopping mall."},
+        {"text":"this was my super-senior (second consecutive) capstone project. sort of a hybrid mario kart racer and tony hawk skating game. i like this take on a racing game that emphasizes agility, tricks, and maneuvers."},
+        {"text":"it was also wild to design for an asymmetrical racing game with three different kinds of vehicle that each control totally differently. we wanted the car, skateboard, and hamster ball to all feel like their own unique game, but we had to keep the races balanced. this was a super fun project, and some of my slickest gameplay programming on a mechanical level."}
+    ]
+}

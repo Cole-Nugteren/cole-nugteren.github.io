@@ -2,7 +2,7 @@ var sidebar = false;
 const body = document.getElementById("body")
 
 function generateSidebar(){
-    var sidebarbutton = document.createElement("button")
+    var sidebarbutton = document.createElement("button");
     sidebarbutton.id = "sidebar-button";
     sidebarbutton.class = "sidebar-button";
     body.appendChild(sidebarbutton)

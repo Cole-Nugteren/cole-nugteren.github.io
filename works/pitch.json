@@ -1,0 +1,30 @@
+{
+    "id":"pitch",
+    "title":"pitch",
+    "thumbimg":"pitch.png",
+    "link":"https://canslp.itch.io/pitch",
+    "images":[
+        {"path":"cover.png","subtitle":"title screen"},
+        {"path":"01.png","subtitle":"doorman"},
+        {"path":"02.png","subtitle":"hallway"},
+        {"path":"03.png","subtitle":"lobby"},
+        {"path":"04.png","subtitle":"interchange"},
+        {"path":"05.png","subtitle":"stranger"},
+        {"path":"06.png","subtitle":"sentry"},
+        {"path":"07.png","subtitle":"warehouse"},
+        {"path":"08.png","subtitle":"airlocks"},
+        {"path":"09.png","subtitle":"poolboy"},
+        {"path":"10.png","subtitle":"leapfrog"},
+        {"path":"11.png","subtitle":"flotsam"},
+        {"path":"12.png","subtitle":"well"},
+        {"path":"13.png","subtitle":"stalker"},
+        {"path":"14.png","subtitle":"districts"},
+        {"path":"15.png","subtitle":"cenote"},
+        {"path":"16.png","subtitle":"abyss"}
+    ],
+    "paragraphs":[
+        {"text":"pitch is a minimalist puzzle-horror game where you ride an elevator down into the depths of a mysterious underground complex. it's a very simple sort of button-door style puzzle game where you stop on each floor and find all of the levers you need to pull to continue your descent. most of the design complexity comes from the mysterious strangers that haunt each floor- shadowy figures that patrol or stalk you. the player has to quickly solve a simple puzzle in the dark while hiding from or out-maneuvering the sentries that may lurk around any corner."},
+        {"text":"this was the first 3d game i ever made. i've always been a very graphics-forward designer, but for this project i wanted to focus completely on gameplay, puzzles, and presentation- so the game is entirely abstract. everything is made out of simple boxes and flat greyscale colors, and there isn't much in the way of recognizable objects. i like the way that you sort of have to take this game on face-value, learning how the world works by rote trial and error. i also think that the abstraction makes the horror a lot more effective, you're never really sure what's going on or what it is you're doing. i love to make a game that communicates only through mechanical relationships and direct sensory feedback."},
+        {"text":"i was pretty bad at using unity when i made this game so the version on itch is actually a remaster that cleans up a lot of the visual problems and buggy puzzles. i still think that this game is sort of brutally difficult, but i think that adds to the brash uncompromising charm. i still find myself revisiting this sort of objectively ameature game all the time, i think it is really alluring and i'm proud of the presentation above all else."}
+    ]
+}

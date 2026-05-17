@@ -1,0 +1,43 @@
+{
+    "id":"petrichor-gardens",
+    "title":"petrichor gardens",
+    "thumbimg":"petrichor-gardens.png",
+    "link":"https://canslp.itch.io/petrichor-gardens",
+    "images":[
+        {"path":"title.png","subtitle":"title screen"},
+
+        {"path":"hub-1.png","subtitle":"the hub"},
+        {"path":"canals-1.png","subtitle":"the canals"},
+        {"path":"atrium-1.png","subtitle":"the atrium"},
+        {"path":"pool-1.png","subtitle":"the pool"},
+        {"path":"valley-1.png","subtitle":"the valley"},
+        {"path":"overpass-1.png","subtitle":"the overpass"},
+        
+        {"path":"hub-2.png","subtitle":"the hub"},
+        {"path":"canals-2.png","subtitle":"the canals"},
+        {"path":"atrium-2.png","subtitle":"the atrium"},
+        {"path":"pool-2.png","subtitle":"the pool"},
+        {"path":"valley-2.png","subtitle":"the valley"},
+        {"path":"overpass-2.png","subtitle":"the overpass"},
+
+        {"path":"hub-3.png","subtitle":"the hub"},
+        {"path":"canals-3.png","subtitle":"the canals"},
+        {"path":"atrium-3.png","subtitle":"the atrium"},
+        {"path":"pool-3.png","subtitle":"the pool"},
+        {"path":"valley-3.png","subtitle":"the valley"},
+        {"path":"overpass-3.png","subtitle":"the overpass"},
+
+        {"path":"hub-4.png","subtitle":"the hub"},
+        {"path":"canals-4.png","subtitle":"the canals"}, 
+        {"path":"atrium-4.png","subtitle":"the atrium"},
+        {"path":"pool-4.png","subtitle":"the pool"},
+        {"path":"valley-4.png","subtitle":"the valley"},
+        {"path":"overpass-4.png","subtitle":"the overpass"}
+    ],
+    "paragraphs":[
+        {"text":"explore a rainy brutalist urban garden in the ruins of an industrial mill. this place is special to me, please take care of it."},
+        {"text":"petrichor gardens is a contemplative first-person urban exploration game. wander a recursive, non-euclidian sanctuary that doesn't seem to end- an immersive sandbox for meditation, nourishment, recreation, or self expression."},
+        {"text":"i made this game fresh out of college. i was burned out with all the group projects- the rigid class structure, the grades, the compromises, the awards- i wanted to make something all by myself that was completely self-indulgent. i didn't need to pitch this game to anyone or manage anyone else's time, it was just a complete stream-of-consciousness game dev meditation. a detox."},
+        {"text":"i really wanted to try to capture this feeling i get in march, this total euphoria of rainy weather after months of snow. the wonder and mystery of wandering around in the city alone. a lot of people call this game 'dreary', but some people have really connected with the warmth that i feel when i play it. this place has been rattling around in my head for years and i just wanted to get it out."}
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id":"checkmight",
+    "title":"checkmight",
+    "thumbimg":"checkmight.png",
+    "link":"https://checkmight.itch.io/checkmight",
+    "images":[
+        {"path":"title.png","subtitle":"title screen"},
+        {"path":"1.jpg","subtitle":""},
+        {"path":"2.jpg","subtitle":""},
+        {"path":"3.jpg","subtitle":""},
+        {"path":"4.jpg","subtitle":""},
+        {"path":"5.jpg","subtitle":""},
+        {"path":"6.jpg","subtitle":""},
+        {"path":"7.jpg","subtitle":""}
+    ],
+    "paragraphs":[
+        {"text":"checkmight is a genre mashup fighting game. essentially you play a game of chess, but in order to take a piece you have to beat them in a miniature traditional 2D fighting game. somehow, this is the most successful project i have ever worked on by far."},
+        {"text":"i remember voting for this game's pitch because it was just so audacious. it's kind of a janky messy little game, but people really seem to like it. it's gotten a ton of attention online and also won all three of the junior level awards at our student expo. i guess there's just something innately appealing about beating a pawn senseless with a rook."},
+        {"text":"we had like maybe three months from pitch to launch, and only a five person team, so this was a great exercise in rapid development and maximizing your resources. making the chess framework was sort of trivial so i spent a lot of time making the whole experience as exciting and juicy as possible. we weren't allowed to use any of godot's 3d nodes for this class, so i taught myself glsl and made a bunch of elaborate shaders to fake an isometric chess board and a parallaxing background."},
+        {"text":"i really wanted to lean into the melodrama of making chess pieces fight, so a lot of my attention went into playing up the juxtaposition between the two game modes. when you start a fight, there's this elaborate system that syncs up a drum fill into the 'fighting' version of our baroque chess music. you get a dramatic screen transition and the fighting stage is like a giant 3d chess board with crazy visual effects. i fondly remember my time on checkmight being roughly 20% functionality and 80% polish."}
+    ]
+}

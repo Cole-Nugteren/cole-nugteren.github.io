@@ -1,0 +1,29 @@
+{
+    "id":"starlight-postal",
+    "title":"starlight postal",
+    "thumbimg":"starlight-postal.png",
+    "link":"https://canslp.itch.io/starlight-postal",
+    "images":[
+        {"path":"title.png","subtitle":"title screen"},
+        {"path":"foothills-1.jpg","subtitle":"autumn foothills"},
+        {"path":"foothills-2.jpg","subtitle":"autumn foothills"},
+        {"path":"foothills-3.jpg","subtitle":"autumn foothills"},
+        {"path":"foothills-4.jpg","subtitle":"autumn foothills"},
+        {"path":"foothills-5.jpg","subtitle":"autumn foothills"},
+        {"path":"foothills-6.jpg","subtitle":"autumn foothills"},
+        {"path":"caverns-1.jpg","subtitle":"crystal caverns"},
+        {"path":"caverns-2.jpg","subtitle":"crystal caverns"},
+        {"path":"caverns-3.jpg","subtitle":"crystal caverns"},
+        {"path":"caverns-4.jpg","subtitle":"crystal caverns"},
+        {"path":"slopes-1.jpg","subtitle":"windswept slopes"},
+        {"path":"slopes-2.jpg","subtitle":"windswept slopes"},
+        {"path":"slopes-3.jpg","subtitle":"windswept slopes"},
+        {"path":"slopes-4.jpg","subtitle":"windswept slopes"},
+        {"path":"slopes-5.jpg","subtitle":"windswept slopes"}
+    ],
+    "paragraphs":[
+        {"text":"starlight postal is a physics game where you deliver mail in a hot air balloon. it's sort of half aerodynamic sidescroller and half rgp-style exploration and fetch quests. i really love this game- it has a smooth game loop of treacherous piloting missions between these cozy little towns where you get to relax and deliver packages to villagers. i still love the way you get to experience each level from two perspectives- once from the ground and once from the air. it's really effecting to me the way you get to see a whole town that you just explored as a tiny little patch of level geometry while you soar over it to the next stop."},
+        {"text":"i'm really happy with the design of this game. i come from a ballooning family and i had always wanted to make something that controlled like a hot air balloon. you essentially ony have control over your altitude- burning or venting to go up or down- and lateral movement is totally dependant on the wind. it makes for a really unique kind of platformer motion where you have to find the right weather patterns that'll take you where you want to go, and then carefully manage your ascent to catch the current. it has this really precarious slippery feel to it, but also gives you an urgent relationship to the whole environment as you learn to quickly read the wind and find your route."},
+        {"text":"starlight postal was my first time ever making a video game with a team. it was probably to this day the best dev team i've ever had- just an incredibly smooth collaborative experience. i was the lead designer and producer for this game, and everyone was just really on board with the premise and brought a ton of energy to the project. i think this is the only game i made in college that actually got finished."}
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "id":"ripple-and-frawg",
+    "title":"ripple and frawg: the seasonal song",
+    "thumbimg":"ripple-and-frawg.png",
+    "link":"https://skippingstones.itch.io/ripple-frawg-demo",
+    "images":[
+        {"path":"title.png","subtitle":"title screen"},
+        {"path":"waterworks-spring-1.jpg","subtitle":"the waterworks (spring)"},
+        {"path":"waterworks-spring-2.jpg","subtitle":"the waterworks (spring)"},
+        {"path":"waterworks-summer-1.jpg","subtitle":"the waterworks (summer)"},
+        {"path":"woods-summer-1.jpg","subtitle":"the woods (summer)"},
+        {"path":"woods-summer-2.jpg","subtitle":"the woods (summer)"},
+        {"path":"woods-autumn-1.jpg","subtitle":"the woods (autumn)"},
+        {"path":"woods-autumn-2.jpg","subtitle":"the woods (autumn)"},
+        {"path":"bog-autumn-1.jpg","subtitle":"the bog (autumn)"},
+        {"path":"bog-autumn-2.jpg","subtitle":"the bog (autumn)"},
+        {"path":"bog-autumn-3.jpg","subtitle":"the bog (autumn)"},
+        {"path":"bog-winter-1.jpg","subtitle":"the bog (winter)"},
+        {"path":"summit-winter-1.jpg","subtitle":"the summit (winter)"},
+        {"path":"summit-winter-2.jpg","subtitle":"the summit (winter)"}
+    ],
+    "paragraphs":[
+        {"text":"play as ripple and frawg, who use the power of their magical instruments to puzzle through different environments, journey through different seasons, and travel upriver to return home."},
+        {"text":"this was my first senior capstone game. we made a couch co-op puzzle platformer about two little cartoon animals that explore a storybook forest. originally this was two different games, so the finished product is pretty high-concept- it combines physics puzzles, music mini-games, and time travel."},
+        {"text": "the whole game takes place in a calendar year, and in each level you need to learn a verse of the 'seasonal song' to advance forward to the next season (which will unlock new puzzle mechanics to let you progress). this meant we needed four levels, each in two different seasons, for a total of eight levels- each with different mechanics, themes, music, and distinct game scenes. we ended up finishing four and designing three more."},
+        {"text":"as most student projects go, this game will never be finished, but the demo is available online and as the level designer i think it's pretty fun!"}
+    ]
+}
