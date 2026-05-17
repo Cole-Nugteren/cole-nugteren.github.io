@@ -221,3 +221,7 @@ a {
     #work-image{
         width: 100%;
     }
+    #work-video{
+        width: 100%;
+        height: 360px;
+    }

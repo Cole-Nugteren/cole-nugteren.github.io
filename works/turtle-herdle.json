@@ -3,6 +3,7 @@
     "title":"turtle herdle",
     "thumbimg":"turtle-herdle.png",
     "link":"https://canslp.itch.io/turtle-herdle",
+    "videos":[],
     "images":[
         {"path":"title.png","subtitle":"title screen"},
         {"path":"sprites.jpg","subtitle":"game sprites"},

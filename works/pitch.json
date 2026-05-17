@@ -3,6 +3,9 @@
     "title":"pitch",
     "thumbimg":"pitch.png",
     "link":"https://canslp.itch.io/pitch",
+    "videos":[
+        {"link":"https://www.youtube.com/embed/LRpbv8DE38E","subtitle":"launch trailer","index":1}
+    ],
     "images":[
         {"path":"cover.png","subtitle":"title screen"},
         {"path":"01.png","subtitle":"doorman"},

@@ -47,17 +47,36 @@ function openWork(id){
             center.appendChild(document.createElement("br"))
             center.appendChild(document.createElement("br"))
 
-            for(var i = 0;i < data.images.length;i ++){
-                var image = document.createElement("img");
-                image.id="work-image";
-                image.src="../assets/works-images/"+data.id+"/"+data.images[i].path;
-                center.appendChild(image);
+            var v = 0;
+            var i = 0;
+            for(var n = 0;n < data.images.length+data.videos.length;n ++){
+                if(v<data.videos.length && data.videos[v].index == n){
+                    var video = document.createElement("iframe");
+                    video.id="work-video";
+                    video.src=data.videos[v].link;
+                    center.appendChild(video);
+    
+                    var subtitle = document.createElement("div");
+                    subtitle.innerHTML = data.videos[v].subtitle;
+                    center.appendChild(subtitle);
+    
+                    center.appendChild(document.createElement("br"))
+                    v++;
+                } else {
+                    var image = document.createElement("img");
+                    image.id="work-image";
+                    image.src="../assets/works-images/"+data.id+"/"+data.images[i].path;
+                    center.appendChild(image);
+    
+                    var subtitle = document.createElement("div");
+                    subtitle.innerHTML = data.images[i].subtitle;
+                    center.appendChild(subtitle);
+    
+                    center.appendChild(document.createElement("br"))
 
-                var subtitle = document.createElement("div");
-                subtitle.innerHTML = data.images[i].subtitle;
-                center.appendChild(subtitle);
-
-                center.appendChild(document.createElement("br"))
+                    i++;
+                }
+                
             }
 
 
@@ -173,17 +192,6 @@ function closeWork(){
 
 
 /*
-const game_works = [
-    new Work("petrichor-gardens", "petrichor gardens", "petrichor-gardens.png",["title screen","","","","","","","",""],["Explore a rainy brutalist urban garden in the ruins of an industrial mill. This place is special to me, please take care of it.","Petrichor Gardens is a contemplative first-person urban exploration game. Wander a recursive, non-euclidian sanctuary that doesn't seem to end- an immersive sandbox for meditation, nourishment, recreation, or self expression."]),
-    new Work("tubular", "tubular!!", "tubular.png",["title","mouse car","rabbit skateboard","hamster ball","ferret scooter","freestyle"],["tubular is the radical rodent racing game where pet shop critters traverse an abandoned shopping mall."]),
-    new Work("ripple-and-frawg", "ripple and frawg: the seasonal song", "ripple-and-frawg.png",[],[]),
-    new Work("turtle-herdle", "turtle herdle", "turtle-herdle.png",[],[]),
-    new Work("suntide-lodge", "suntide lodge", "suntide-lodge.png",[],[]),
-    new Work("checkmight", "checkmight", "checkmight.png",[],[]),
-    new Work("starlight-postal", "starlight postal", "starlight-postal.png",[],[]),
-    new Work("pitch","pitch","pitch.png",[],[])
-];
-
 const music_works = [
     new Work("golfella", "golfella!", "golfella.jpg",[],[]),
     new Work("cube", "cube", "cube.jpg",[],[]),

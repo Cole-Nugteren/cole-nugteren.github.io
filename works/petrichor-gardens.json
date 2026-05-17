@@ -3,6 +3,9 @@
     "title":"petrichor gardens",
     "thumbimg":"petrichor-gardens.png",
     "link":"https://canslp.itch.io/petrichor-gardens",
+    "videos":[
+        {"link":"https://www.youtube.com/embed/a2zCZYC5mVo","subtitle":"launch trailer","index":1}
+    ],
     "images":[
         {"path":"title.png","subtitle":"title screen"},
 

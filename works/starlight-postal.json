@@ -3,6 +3,9 @@
     "title":"starlight postal",
     "thumbimg":"starlight-postal.png",
     "link":"https://canslp.itch.io/starlight-postal",
+    "videos":[
+        {"link":"https://www.youtube.com/embed/9BfLqf0_9_A","subtitle":"launch trailer","index":1}
+    ],
     "images":[
         {"path":"title.png","subtitle":"title screen"},
         {"path":"foothills-1.jpg","subtitle":"autumn foothills"},

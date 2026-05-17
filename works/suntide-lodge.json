@@ -3,6 +3,9 @@
     "title":"suntide lodge",
     "thumbimg":"suntide-lodge.png",
     "link":"https://canslp.itch.io/suntide-lodge",
+    "videos":[
+        {"link":"https://www.youtube.com/embed/vK-OSpQAWhU","subtitle":"launch trailer","index":1}
+    ],
     "images":[
         {"path":"title.jpg","subtitle":"title screen"},
         {"path":"005.jpg","subtitle":"island river"},

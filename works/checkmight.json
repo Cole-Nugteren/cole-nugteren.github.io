@@ -3,6 +3,9 @@
     "title":"checkmight",
     "thumbimg":"checkmight.png",
     "link":"https://checkmight.itch.io/checkmight",
+    "videos":[
+        {"link":"https://www.youtube.com/embed/LggANHCcDY4","subtitle":"launch trailer","index":1}
+    ],
     "images":[
         {"path":"title.png","subtitle":"title screen"},
         {"path":"1.jpg","subtitle":""},

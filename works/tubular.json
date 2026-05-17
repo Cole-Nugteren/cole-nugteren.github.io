@@ -3,6 +3,9 @@
     "title":"tubular!!",
     "thumbimg":"tubular.png",
     "link":"https://totally-entertainment.itch.io/tubular",
+    "videos":[
+        {"link":"https://www.youtube.com/embed/26sJ1ssa8nQ","subtitle":"launch trailer","index":1}
+    ],
     "images":[
         {"path":"splash-screen.png","subtitle":"splash screen"},
         {"path":"car.png","subtitle":"mouse car"},
