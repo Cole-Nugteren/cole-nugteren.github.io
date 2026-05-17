@@ -2,7 +2,9 @@
     "id":"",
     "title":"",
     "thumbimg":"",
+    "reuse_cover":false,
     "link":"",
+    "videos":[],
     "images":[
         {"path":"","subtitle":""}
     ],

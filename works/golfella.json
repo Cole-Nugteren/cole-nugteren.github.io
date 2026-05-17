@@ -1,0 +1,22 @@
+{
+    "id":"golfella",
+    "title":"golfella!",
+    "thumbimg":"golfella.jpg",
+    "reuse_cover":false,
+    "link":"https://canslp.bandcamp.com/album/golfella",
+    "videos":[],
+    "images":[
+        {"path":"cover.jpg","subtitle":"album cover"},
+        {"path":"title.png","subtitle":"title screen"},
+        {"path":"seaside_greens.png","subtitle":"seaside greens"},
+        {"path":"dialogue.png","subtitle":"dialogue"},
+        {"path":"pause_menu.png","subtitle":"pause menu"},
+        {"path":"level_select.png","subtitle":"level select"}
+    ],
+    "paragraphs":[
+        {"text":"golfella is a speedrunning platformer/golf game mashup. think sonic the hedgehog but you're juggling a golf ball- chaining moves and strokes into combos to try to finish each hole as quickly as possible with as few strokes as you can. i made the entire ost for this game, it's one of my favorite musical projects ever!"},
+        {"text":"this was my first time scoring a video game, and i had a blast. i joined the team after the demo was already out, and they were actually looking to redo the music after their original musician left. i ended up completely rescoring the game from scratch."},
+        {"text":"the plan for golfella was to have five planets, each with their own music. i wanted to try my hand at doing a memorable main theme, and using each world to remix the theme in a new genre. the project sort of fizzled out after just two planets, so i ended up finishing three level themes plus a title song and a credit song- but i'm really happy with how they turned out!"}
+    ],
+    "music": 3312189766
+}

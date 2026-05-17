@@ -2,6 +2,7 @@
     "id":"starlight-postal",
     "title":"starlight postal",
     "thumbimg":"starlight-postal.png",
+    "reuse_cover":false,
     "link":"https://canslp.itch.io/starlight-postal",
     "videos":[
         {"link":"https://www.youtube.com/embed/9BfLqf0_9_A","subtitle":"launch trailer","index":1}

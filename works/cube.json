@@ -1,0 +1,17 @@
+{
+    "id":"cube",
+    "title":"cube",
+    "thumbimg":"cube.jpg",
+    "reuse_cover":true,
+    "cover_subtitle":"album cover",
+    "link":"https://canslp.bandcamp.com/album/cube",
+    "videos":[],
+    "images":[
+    ],
+    "paragraphs":[
+        {"text":"cube was the last album i made in college before they started letting me make games. i wonder if my excitement about game development is in any way audible- it was certainly at the front of my mind from the way i was titling the tracks."},
+        {"text":"i remember being freshly immersed in the exciting new fronteir of 3d graphics and real game engines for grown-ups. i was starting and restarting lots of little projects all the time that never amounted to anything. i think i made this album during a fit of mania between making pitch and trying to write an adventure game in raw java. for some reason music has always been an easier thing for me to actually bare down and finish."},
+        {"text":" to me, cube sounds palpable with that frenetic excitement of freshman year. this is certainly some of the most technically sophisticated music i made as an adolescent, and i think it really holds up."}
+    ],
+    "music":1676100839
+}

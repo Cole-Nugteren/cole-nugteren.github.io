@@ -2,6 +2,7 @@
     "id":"suntide-lodge",
     "title":"suntide lodge",
     "thumbimg":"suntide-lodge.png",
+    "reuse_cover":false,
     "link":"https://canslp.itch.io/suntide-lodge",
     "videos":[
         {"link":"https://www.youtube.com/embed/vK-OSpQAWhU","subtitle":"launch trailer","index":1}

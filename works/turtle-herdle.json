@@ -2,6 +2,7 @@
     "id":"turtle-herdle",
     "title":"turtle herdle",
     "thumbimg":"turtle-herdle.png",
+    "reuse_cover":false,
     "link":"https://canslp.itch.io/turtle-herdle",
     "videos":[],
     "images":[

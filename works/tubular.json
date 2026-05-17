@@ -2,6 +2,7 @@
     "id":"tubular",
     "title":"tubular!!",
     "thumbimg":"tubular.png",
+    "reuse_cover":false,
     "link":"https://totally-entertainment.itch.io/tubular",
     "videos":[
         {"link":"https://www.youtube.com/embed/26sJ1ssa8nQ","subtitle":"launch trailer","index":1}

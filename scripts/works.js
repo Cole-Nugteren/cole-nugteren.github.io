@@ -46,10 +46,41 @@ function openWork(id){
 
             center.appendChild(document.createElement("br"))
             center.appendChild(document.createElement("br"))
+            if(data.reuse_cover != false){
+                var image = document.createElement("img");
+                image.id="work-image";
+                image.src="../assets/works-thumbnails/" + data.thumbimg;
+                center.appendChild(image);
 
+                var subtitle = document.createElement("div");
+                subtitle.innerHTML = data.cover_subtitle;
+                center.appendChild(subtitle);
+
+                center.appendChild(document.createElement("br"))
+            }
             var v = 0;
             var i = 0;
+            if(data.images.length+data.videos.length==0){
+                var music = document.createElement("iframe");
+                    music.id="work-music";
+                    music.src="https://bandcamp.com/EmbeddedPlayer/album="+data.music+"/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/artwork=small/transparent=true/";
+                    music.href=link;
+                    center.appendChild(music);
+    
+                    center.appendChild(document.createElement("br"))
+                    center.appendChild(document.createElement("br"))
+            }
             for(var n = 0;n < data.images.length+data.videos.length;n ++){
+                if(data.music != null && n==1){
+                    var music = document.createElement("iframe");
+                    music.id="work-music";
+                    music.src="https://bandcamp.com/EmbeddedPlayer/album="+data.music+"/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=true/artwork=small/transparent=true/";
+                    music.href=link;
+                    center.appendChild(music);
+    
+                    center.appendChild(document.createElement("br"))
+                    center.appendChild(document.createElement("br"))
+                }
                 if(v<data.videos.length && data.videos[v].index == n){
                     var video = document.createElement("iframe");
                     video.id="work-video";
@@ -132,6 +163,15 @@ const game_works = [
     "pitch"
 ];
 
+const music_works = [
+    "golfella",
+    "cube",
+    "clementine",
+    "amp",
+    "acontextual",
+    "sugar"
+]
+
 function generateGames() {
     var i = 0;
     var last_row;
@@ -147,14 +187,16 @@ function generateGames() {
 }
 
 function generateMusic() {
+    var i = 0;
+    var last_row;
     for (const work of music_works) {
-        generateThumbnail(work);
-    }
-}
-
-function generateArt() {
-    for (const work of art_works) {
-        generateThumbnail(work);
+        if(i%2==0){
+            last_row = document.createElement("div");
+            last_row.id="work-row";
+            center.appendChild(last_row);
+        }
+        generateThumbnail(work,last_row);
+        i++;
     }
 }
 

@@ -2,6 +2,7 @@
     "id":"checkmight",
     "title":"checkmight",
     "thumbimg":"checkmight.png",
+    "reuse_cover":false,
     "link":"https://checkmight.itch.io/checkmight",
     "videos":[
         {"link":"https://www.youtube.com/embed/LggANHCcDY4","subtitle":"launch trailer","index":1}

@@ -2,6 +2,7 @@
     "id":"ripple-and-frawg",
     "title":"ripple and frawg: the seasonal song",
     "thumbimg":"ripple-and-frawg.png",
+    "reuse_cover":false,
     "link":"https://skippingstones.itch.io/ripple-frawg-demo",
     "videos":[
         {"link":"https://www.youtube.com/embed/lnqWCGGpHk0","subtitle":"launch trailer","index":1}

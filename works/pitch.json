@@ -2,6 +2,7 @@
     "id":"pitch",
     "title":"pitch",
     "thumbimg":"pitch.png",
+    "reuse_cover":false,
     "link":"https://canslp.itch.io/pitch",
     "videos":[
         {"link":"https://www.youtube.com/embed/LRpbv8DE38E","subtitle":"launch trailer","index":1}
