@@ -225,6 +225,12 @@ function generateArt() {
     }
 }
 
+function generateMisc(){
+    var msg = document.createElement("div");
+    msg.innerHTML = "coming soon...";
+    center.appendChild(msg);
+}
+
 var tab = "games";
 const params2 = new URLSearchParams(window.location.search);
 if (params2.has('tab')) {
@@ -246,6 +252,7 @@ switch (tab) {
         document.getElementsByName("art_button")[0].setAttribute("id", "bold");
         break;
     case "misc":
+        generateMisc();
         document.getElementsByName("misc_button")[0].setAttribute("id", "bold");
         break;
 }
