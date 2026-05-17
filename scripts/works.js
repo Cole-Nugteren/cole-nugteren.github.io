@@ -1,6 +1,37 @@
 const center = document.getElementById("center-content")
 const pagebody = document.getElementById("body")
 
+const game_works = [
+    "petrichor-gardens",
+    "tubular",
+    "ripple-and-frawg",
+    "turtle-herdle",
+    "suntide-lodge",
+    "checkmight",
+    "starlight-postal",
+    "pitch"
+];
+
+const music_works = [
+    "golfella",
+    "cube",
+    "clementine",
+    "amp",
+    "acontextual",
+    "sugar"
+];
+
+const art_works = [
+    "parasite",
+    "trail-vignettes",
+    "isometric-worlds",
+    "stalker",
+    "silvergreen-mall",
+    "life-drawings"
+];
+
+const misc_works = [];
+
 function getWork(id){
     var path = "../works/"+id+".json";
     var request = new XMLHttpRequest();
@@ -152,26 +183,6 @@ function openWork(id){
     pagebody.appendChild(popup);
 }
 
-const game_works = [
-    "petrichor-gardens",
-    "tubular",
-    "ripple-and-frawg",
-    "turtle-herdle",
-    "suntide-lodge",
-    "checkmight",
-    "starlight-postal",
-    "pitch"
-];
-
-const music_works = [
-    "golfella",
-    "cube",
-    "clementine",
-    "amp",
-    "acontextual",
-    "sugar"
-]
-
 function generateGames() {
     var i = 0;
     var last_row;
@@ -190,6 +201,20 @@ function generateMusic() {
     var i = 0;
     var last_row;
     for (const work of music_works) {
+        if(i%2==0){
+            last_row = document.createElement("div");
+            last_row.id="work-row";
+            center.appendChild(last_row);
+        }
+        generateThumbnail(work,last_row);
+        i++;
+    }
+}
+
+function generateArt() {
+    var i = 0;
+    var last_row;
+    for (const work of art_works) {
         if(i%2==0){
             last_row = document.createElement("div");
             last_row.id="work-row";
@@ -229,28 +254,3 @@ function closeWork(){
     var popup = document.getElementById("work-popup")
     popup.remove();
 }
-
-
-
-
-/*
-const music_works = [
-    new Work("golfella", "golfella!", "golfella.jpg",[],[]),
-    new Work("cube", "cube", "cube.jpg",[],[]),
-    new Work("clementine", "clementine", "clementine.jpg",[],[]),
-    new Work("amp","amp ep","amp.jpg",[],[]),
-    new Work("acontextual", "acontextual", "acontextual.jpg",[],[]),
-    new Work("sugar","sugar","sugar.jpg",[],[])
-];
-
-const art_works = [
-    new Work("parasite","parasite","parasite.jpg",[],[]),
-    new Work("trail-vignettes","trail vignettes","trail-vignettes.jpg",[],[]),
-    new Work("isometric-worlds","isometric worlds","isometric-worlds.jpg",[],[]),
-    new Work("stalker","stalker","stalker.jpg",[],[]),
-    new Work("silvergreen-mall","silvergreen mall","silvergreen-mall.jpg",[],[]),
-    new Work("life-drawings","life drawings","life-drawings.jpg",[],[])
-];
-
-const misc_works = [];
-*/

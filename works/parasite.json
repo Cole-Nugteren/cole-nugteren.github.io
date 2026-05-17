@@ -1,0 +1,18 @@
+{
+    "id":"parasite",
+    "title":"parasite - the park's house",
+    "thumbimg":"parasite.jpg",
+    "reuse_cover":false,
+    "link":"https://www.artstation.com/artwork/LR1lgr",
+    "videos":[],
+    "images":[
+        {"path":"1.jpg","subtitle":""},
+        {"path":"2.jpg","subtitle":""},
+        {"path":"3.jpg","subtitle":""},
+        {"path":"4.jpg","subtitle":""},
+        {"path":"5.jpg","subtitle":""}
+    ],
+    "paragraphs":[
+        {"text":"a 3d stylization of the modernist mansion from bong joon ho's 2019 film 'parasite'. made in blender."}
+    ]
+}

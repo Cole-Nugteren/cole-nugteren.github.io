@@ -1,0 +1,25 @@
+{
+    "id":"life-drawings",
+    "title":"life drawings",
+    "thumbimg":"life-drawings.jpg",
+    "reuse_cover":false,
+    "link":"https://www.artstation.com/artwork/yDEK5x",
+    "videos":[],
+    "images":[
+        {"path":"full body.jpg","subtitle":"full body"},
+        {"path":"legs.jpg","subtitle":"legs"},
+        {"path":"knees.jpg","subtitle":"knees"},
+        {"path":"back 1.jpg","subtitle":"back 1"},
+        {"path":"back 2.jpg","subtitle":"back 2"},
+        {"path":"mannequin.jpg","subtitle":"mannequin"},
+        {"path":"arm 1.jpg","subtitle":"arm 1"},
+        {"path":"arm 2.jpg","subtitle":"arm 2"},
+        {"path":"hand.jpg","subtitle":"hand"},
+        {"path":"foot.jpg","subtitle":"foot"},
+        {"path":"skull.jpg","subtitle":"skull"},
+        {"path":"portrait.jpg","subtitle":"portrait"}
+    ],
+    "paragraphs":[
+        {"text":"all of my major studies from life drawing. i am just not an intuitive character artist so this class was very much outside of my wheelhouse, but i'm really proud of these."}
+    ]
+}

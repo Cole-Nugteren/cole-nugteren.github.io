@@ -1,0 +1,25 @@
+{
+    "id":"isometric-worlds",
+    "title":"isometric worlds",
+    "thumbimg":"isometric-worlds.jpg",
+    "reuse_cover":false,
+    "link":"https://www.artstation.com/artwork/K3gR1o",
+    "videos":[],
+    "images":[
+        {"path":"suncherry cove.png","subtitle":"suncherry cove"},
+        {"path":"cinnamon county.jpg","subtitle":"cinnamon county"},
+        {"path":"snowbell outpost.jpg","subtitle":"snowbell outpost"},
+        {"path":"turquoise pass.png","subtitle":"turquoise pass"},
+        {"path":"drizzle ruins.png","subtitle":"drizzle ruins"},
+        {"path":"violet promenade.png","subtitle":"violet promenade"},
+        {"path":"maple mill.png","subtitle":"maple mill"},
+        {"path":"serotina canal.png","subtitle":"serotina canal"},
+        {"path":"sapphire garden.png","subtitle":"sapphire garden"},
+        {"path":"crumblesprout cape.png","subtitle":"crumblesprout cape"},
+        {"path":"spearmint thaw.png","subtitle":"spearmint thaw"}
+    ],
+    "paragraphs":[
+        {"text":"for an extremely long time, i made a ton of these little isometric scenes. as a games environment artist, i have obviously always had an interest in environmental archetypes. the snowy level, the beach level, etc. theming, culture, seasonality, environmental motifs. my brain is full to the brim with video game places, and i suppose this is an outlet to express those places."},
+        {"text":"i made most of these before i ever learned how to make a 3d game, so this is really primordial stuff here. they are in roughly reverse chronological order but they span from 2018 to 2022, i really developed a lot over those four years. some of these are really cool to me, and some are bad, but they are all here!"}
+    ]
+}

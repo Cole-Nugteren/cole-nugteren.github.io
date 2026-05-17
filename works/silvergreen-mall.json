@@ -1,0 +1,17 @@
+{
+    "id":"silvergreen-mall",
+    "title":"silvergreen mall",
+    "thumbimg":"silvergreen-mall.jpg",
+    "reuse_cover":false,
+    "link":"https://www.artstation.com/artwork/8wb11R",
+    "videos":[],
+    "images":[
+        {"path":"final.jpg","subtitle":"final composition"},
+        {"path":"comp-1.jpg","subtitle":"thumbnail 1"},
+        {"path":"comp-2.jpg","subtitle":"thumbnail 2"},
+        {"path":"comp-3.jpg","subtitle":"thumbnail 3"}
+    ],
+    "paragraphs":[
+        {"text":"here's another school project. i guess i was really into ecobrutalism at the time, and to be honest i still am. these little sketches would eventually become the base concept art for 'petrichor gardens'- a project i would sort of keep warming up to make again with the tutorial level in 'ripple and frawg'. so that's a neat little artistic pedigree."}
+    ]
+}

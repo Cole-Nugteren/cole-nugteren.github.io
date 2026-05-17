@@ -1,0 +1,17 @@
+{
+    "id":"trail-vignettes",
+    "title":"trail vignettes",
+    "thumbimg":"trail-vignettes.jpg",
+    "reuse_cover":false,
+    "link":"https://www.artstation.com/artwork/B3bYB9",
+    "videos":[],
+    "images":[
+        {"path":"triple overpass.png","subtitle":"triple overpass"},
+        {"path":"overpass trail.png","subtitle":"overpass trail"},
+        {"path":"freeway basin.png","subtitle":"freeway basin"},
+        {"path":"billboard.png","subtitle":"billboard"}
+    ],
+    "paragraphs":[
+        {"text":"back when i lived in st. louis park, in the summer, i would ride my bike almost every day. sometimes i would stop and sketch things that i saw, and very occasionally i would come home and illustrate one of the sketches. these are my favorite vignettes from those trail sketches."}
+    ]
+}

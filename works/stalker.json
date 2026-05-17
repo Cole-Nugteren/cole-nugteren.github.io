@@ -1,0 +1,15 @@
+{
+    "id":"stalker",
+    "title":"stalker - dream sequence",
+    "thumbimg":"stalker.jpg",
+    "reuse_cover":false,
+    "link":"https://www.artstation.com/artwork/bg2D9E",
+    "videos":[],
+    "images":[
+        {"path":"page_1_color_final.png","subtitle":""},
+        {"path":"page_2_color_final.png","subtitle":""}
+    ],
+    "paragraphs":[
+        {"text":"i have never been very good at rote 'drawing', particularly characters and faces, so for my very last studio art credit in college i took a comics class. this was my favorite assignment from that class- we had to adapt a scene from a film. so here's the dream sequence from tarkovsky's 'stalker'."}
+    ]
+}
