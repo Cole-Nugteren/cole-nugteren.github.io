@@ -5,7 +5,8 @@
     "reuse_cover":false,
     "link":"https://canslp.itch.io/petrichor-gardens",
     "videos":[
-        {"link":"https://www.youtube.com/embed/a2zCZYC5mVo","subtitle":"launch trailer","index":1}
+        {"link":"https://www.youtube.com/embed/a2zCZYC5mVo","subtitle":"launch trailer","index":1},
+        {"link":"https://www.youtube.com/embed/HPjVjX5qclI","subtitle":"gameplay clip","index":2}
     ],
     "images":[
         {"path":"title.png","subtitle":"title screen"},
